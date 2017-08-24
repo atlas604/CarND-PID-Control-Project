@@ -25,7 +25,7 @@ The D component dictates the amount of change in the model and helps minimize ov
 
 The final hyperparameters were chosen through manual tuning.  
 
-The main issue I believe is that we have to work with a constant velocity model. How much a vehicle should turn is greatly based on it's velocity.  Since the controller doesn't have brake implementations and it does not recognize when sharp turns are approaching, we have to take these factors into consideration.  
+The main issue I believe is that we have to work with constant velocity. How much a vehicle should turn is greatly based on it's velocity.  Since the controller doesn't have brake implementations and it does not recognize when sharp turns are approaching, we have to take these factors into consideration.  By lowering the velocity we can avoid many of these issues but it's not optimal for certain areas of the track where we can travel at much higher speeds.   
 
 First, leaving the I component at 0 helps minimize the confusion because of varying CTE at straight paths and corners.  Having CTE data beforehand can help the controller immensely, since CTE starts at 0, using this component will cause the car to drive wildly initially and it might go off-track before it corrects itself.
 
