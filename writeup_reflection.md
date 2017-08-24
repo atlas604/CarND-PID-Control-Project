@@ -15,7 +15,7 @@ However, having low P values will make sharp turns very difficult to clear.
 
 **Integral (I)**
 
-The I component aims to cancel the steering drift by using the sum of all previous CTE observed to correct the vehicle's motion. A high value of this component can make the steering overshoot immensely, causing the vehicle to turn in circles. At miniscule values this component appears to help steering at corners but creates small inconsistencies when the car returns to a straight path.  
+The I component aims to cancel the steering drift by using the sum of all previous CTE observed to correct the vehicle's motion.  A high value of this component can make the steering overshoot immensely, causing the vehicle to turn in circles.  At miniscule values this component appears to help steering at corners but creates small inconsistencies when the car returns to a straight path.  
 
 **Differential (D)**
 
